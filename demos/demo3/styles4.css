@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	font-size: 10pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+	display:flex;
+	flex-direction: column;
+	background-color: darkkhaki;
+}
+
+header {
+	flex-basis: 3em;
+	min-height: 3em;
+
+	background-color: crimson;
+	font-size: 15pt;
+	padding: 5px;
+}
+
+footer {
+	flex-basis: 2em;
+	/* min-height:2em; */
+	flex-shrink: 0;
+
+	background-color: darkslateblue;
+	font-size: 20pt;
+	padding: 5px;
+}
+
+.container{
+	display: flex;
+	align-items: stretch;
+	/* flex-basis worked for all except IE11. min-height works for IE11, Edge, Firefox  */
+	/* flex-basis: calc(100vh - ((3em * 1.5) + (2em * 2) + 10px + 10px)); */
+	min-height: calc(100vh - ((3em * 1.5) + (2em * 2) + 10px + 10px));
+
+	background-color:  violet;
+}
+
+aside {
+	background-color: mediumseagreen;
+	min-width: 150px;
+	padding: 5px;
+}
+
+main {
+	background-color: sandybrown;
+	padding: 5px;
+}
+
+@media (max-width: 767px){
+	.container{
+		flex-direction: column;
+	}
+
+	aside {
+		order: 1;
+	}
+
+	main{
+		flex-grow: 1;
+	}
+}
+
+/* @supports(display: flex){
+	.wrapper{
+		height: auto;
+		min-height: 100vh;
+	}
+	main, aside{
+		height: auto;
+		min-height: 70vh;
+	}
+} */

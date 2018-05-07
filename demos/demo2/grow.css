@@ -1,0 +1,43 @@
+/* Flexbox */
+.container {
+	display: flex;
+	align-items: center;
+	width: 800px;
+}
+
+.div1{
+	flex-grow: 0;
+}
+
+.div2, .div3, .div4{
+	flex-grow: 1;
+}
+
+/* Pretty stuff */
+body{
+	font-size: 10pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+	background-color: salmon;
+}
+.container>div{
+	width: 100px;
+	height: 100px;
+}
+
+.div1 {
+	background-color: peru;
+}
+
+.div2 {
+	background-color: purple;
+}
+
+.div3 {
+	background-color: wheat;
+}
+
+.div4 {
+	background-color: palegreen;
+}

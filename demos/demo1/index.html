@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,34 @@
 	<title>Demo 1</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<p>A basic demo showing laying out 3 divs on an axis.</p>
-	<p>Show converting between flex-directions</p>	
-	<p>Show use of justify-content and align-items, indicating which is for the main and which is for the cross</p>
-	<p>align-self for modifying cross-axis alignment of a subset of the flex items</p>
-	<p>Use simultaneous flexboxes showing all 4 flex-directions at once</p>
 
+<body>
+	<h1>Demo 1 - Flexbox Basics</h1>
+	
+	<h2>flex-direction: row</h2>
+	<div class="container flex-row">
+		<div class="box1">Hello</div>
+		<div class="box2">Hello</div>
+		<div class="box3">Hello</div>
+	</div>
+	<h2>flex-direction: row-reverse</h2>
+	<div class="container flex-row-rev">
+		<div class="box1">Hello</div>
+		<div class="box2">Hello</div>
+		<div class="box3">Hello</div>
+	</div>
+	<h2>flex-direction: column</h2>
+	<div class="container flex-col">
+		<div class="box1">Hello</div>
+		<div class="box2">Hello</div>
+		<div class="box3">Hello</div>
+	</div>
+	<h2>flex-direction: column-reverse</h2>
+	<div class="container flex-col-rev">
+		<div class="box1">Hello</div>
+		<div class="box2">Hello</div>
+		<div class="box3">Hello</div>
+	</div>
 </body>
+
 </html>

@@ -1,0 +1,72 @@
+/* Flexbox */
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-row-rev {
+	flex-direction: row-reverse;
+}
+
+.flex-col-rev {
+	flex-direction: column-reverse;
+}
+
+.box1{
+}
+
+.box2{
+}
+
+.box3{
+}
+
+/* ================================== */
+/* Display only */
+body{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 10pt;
+}
+
+.container {
+	background-color: plum;
+	height: 150px;
+	width: 150px;
+}
+
+.flex-row {
+	border-left: red 5px solid;
+}
+
+.flex-col {
+	border-top: red 5px solid;
+}
+
+.flex-row-rev {
+	border-right: red 5px solid;
+}
+
+.flex-col-rev {
+	border-bottom: red 5px solid;
+}
+
+.box1 {
+	background-color: darkgreen;
+}
+
+.box2 {
+	background-color:  lightseagreen;
+}
+
+.box3 {
+	background-color: hotpink;
+}

@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	margin-left: 5px;
+	font-size: 10pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+	display:flex;
+	flex-direction: column;
+	/* IE11: min-height doesn't work when flex-direction: column */
+	/* min-height:100vh; */
+	/* Setting height here causes a BIG problem when the main section is longer than the default container height */
+	/* height: 100vh; */
+}
+
+
+header {
+	background-color: crimson;
+	font-size: 15pt;
+	flex-basis: 3em;
+	min-height: 3em;
+	padding: 5px;
+}
+
+footer {
+	background-color: darkslateblue;
+	font-size: 20pt;
+	flex-basis: 2em;
+	min-height:2em;
+	padding: 5px;
+}
+
+.container{
+	display: flex;
+	align-items: stretch;
+	background-color:  violet;
+	flex-basis: content;
+
+}
+
+aside {
+	background-color: mediumseagreen;
+	min-width: 150px;
+	padding: 5px;
+}
+
+main {
+	background-color: sienna;
+	padding: 5px;
+}
+
+@media (max-width: 767px){
+	.container{
+		flex-direction: column;
+	}
+
+	aside {
+		order: 1;
+	}
+}
+
+@supports(display: flex){
+	.wrapper{
+		height: auto;
+		min-height: 100vh;
+	}
+	main, aside{
+		height: auto;
+		min-height: 70vh;
+	}
+}
