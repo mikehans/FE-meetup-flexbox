@@ -50,16 +50,18 @@ main {
 	padding: 5px;
 }
 
+@media (min-width: 768px){
+	main{
+		order: 1;
+	}
+}
 @media (max-width: 767px){
 	.container{
 		flex-direction: column;
 	}
 
-	aside {
-		order: 1;
-	}
-
-	main{
+	main {
+		order: 0;
 		flex-grow: 1;
 	}
 }
