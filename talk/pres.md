@@ -15,7 +15,7 @@
 
 # Basic operation
 Apply this to the flex container
-* turn flexbox on
+* turn flexbox
 	```
 	display: flex;
 	```
@@ -31,14 +31,17 @@ Apply this to the flex container
 	```
 	align-items: [flex-start, flex-end, center, stretch, space-around, space-between];
 	```
+## Demo!
+demo1/basics.html
+demo1/justify-align.html
 
-# Additional stuff you can do
+# More knobs and levers!
 To the flex container:
 * wrapping
 	```
 	flex-wrap: [wrap, wrap-reverse];
 	```
-* while wrapping, control spacing between rows 
+* when wrapping, control spacing between rows 
 	```
 	align-content: [flex-start, flex-end, center, stretch, space-around, space-between]; 
 	```
@@ -102,6 +105,16 @@ Similar to flex-grow...
 But this time the flex-shrink creates a ratio at which the flex items must shrink to fit width.
 
 # flex-basis
+Specifies the ideal width of a flex item.
+
+## How is width determined?
+* flex-basis beats
+	* width attribute, beats
+		* content width 
+
+## flex-basis with min-width and max-width
+* min-width and max-width constrain flex-basis
+
 
 # Getting started in production
 * browser support (caniuse.com)
