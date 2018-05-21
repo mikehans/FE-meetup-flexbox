@@ -2,8 +2,13 @@
 
 .container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+}
+
+.container>div {
+	padding: 10px;
+	flex-basis: 100px;
 }
 
 /* .div1 {
@@ -34,11 +39,7 @@ body {
 	background-color: salmon;
 	height: 70vh;
 	width: calc(100vw - 10px);
-}
-
-.container>div {
-	padding: 10px;
-	flex-basis: 100px;
+	font-size: 20pt;
 }
 
 .div1 {
@@ -46,7 +47,7 @@ body {
 }
 
 .div2 {
-	background-color: purple;
+	background-color: lightseagreen;
 }
 
 .div3 {

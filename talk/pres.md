@@ -1,9 +1,8 @@
 # Intro to flexbox
 
 # What is flexbox for?
-* Layout
-	* Laying out content along a single axis
-	* you choose
+* It is a layout tool
+	* Along a single axis
 		* horizontally, or
 		* vertically
 
@@ -13,7 +12,7 @@
 * main axis
 * cross axis
 
-# Basic operation
+# Basic operation (your first cheat sheet!)
 Apply this to the flex container
 * turn flexbox on
 	```
@@ -23,16 +22,16 @@ Apply this to the flex container
 	```
 	flex-direction: [row, column, row-reverse, column-reverse];
 	```
-* set the main axis
+* set the main axis alignment
 	```
 	justify-content: [flex-start, flex-end, center, stretch, space-around, space-between];
 	```
-* set the cross axis
+* set the cross axis alignment
 	```
 	align-items: [flex-start, flex-end, center, stretch, space-around, space-between];
 	```
 
-# Additional stuff you can do
+# Wrapping
 To the flex container:
 * wrapping
 	```
@@ -40,11 +39,13 @@ To the flex container:
 	```
 * while wrapping, control spacing between rows 
 	```
-	align-content: [flex-start, flex-end, center, stretch, space-around, space-between]; 
+	align-content: [fl..-s...., fl..-e.., ce...., st....., sp...-ar...., sp...-b......]; 
 	```
+* alignment (justify-content and align-items)
+	* applies to the rows individually
 
-To individual flex items:
-* change alignment along the cross axis
+# Vary individual items
+* over-ride cross axis alignment
 	```
 	align-self: [flex-start, flex-end, center, stretch, space-around, space-between];
 	```
@@ -102,13 +103,21 @@ Similar to flex-grow...
 But this time the flex-shrink creates a ratio at which the flex items must shrink to fit width.
 
 # flex-basis
+* determines the _ideal width_ of a flex-item
+* how is width determined?
+	* flex-basis wins
+	* width property on a flex item
+	* content width
+* default
+	* auto
+	* defers to the rules above
+* flex-basis property constrained by min-width and max-width
 
 # Getting started in production
 * browser support (caniuse.com)
 * start small
-	* maybe you need to center a single element on both axes
-	* maybe you need to add an element beside another 
-		* this new element has optional display
+	* center a single element on both axes
+	* add an optional element beside another 
 		* no matter whether 1 or both elements are displayed, you need to center them
 	* you could use it to layout a menu
 		* perhaps the menu needs to display horizontally for wide displays and vertically on mobile

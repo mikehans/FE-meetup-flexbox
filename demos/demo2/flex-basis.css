@@ -3,21 +3,23 @@
 	display: flex;
 	/* flex-direction: column; */
 	align-items: center;
-}
-
-.div1{
-	flex-grow: 1;
-}
-
-.div2, .div3, .div4{
+	/* padding-top: 10px; */
+	/* padding-bottom: 10px; */
+	font-size: 20pt;
 }
 
 .container>div{
 	/* width: 100px; */
-	height: 100px;
+	/* flex-basis: 250px; */
+	/* min-width: 150px; */
 	/* max-width: 200px; */
+}
 
-	flex-basis: 250px;
+.div1{
+	/* flex-grow: 1; */
+}
+
+.div2, .div3, .div4{
 }
 
 /* Pretty stuff */
@@ -30,7 +32,7 @@
 }
 
 .div2 {
-	background-color: purple;
+	background-color: lightseagreen;
 }
 
 .div3 {
