@@ -14,7 +14,7 @@
 
 # Basic operation (your first cheat sheet!)
 Apply this to the flex container
-* turn flexbox on
+* turn flexbox
 	```
 	display: flex;
 	```
@@ -30,6 +30,9 @@ Apply this to the flex container
 	```
 	align-items: [flex-start, flex-end, center, stretch, space-around, space-between];
 	```
+## Demo!
+demo1/basics.html
+demo1/justify-align.html
 
 # Wrapping
 To the flex container:
@@ -37,7 +40,7 @@ To the flex container:
 	```
 	flex-wrap: [wrap, wrap-reverse];
 	```
-* while wrapping, control spacing between rows 
+* when wrapping, control spacing between rows 
 	```
 	align-content: [fl..-s...., fl..-e.., ce...., st....., sp...-ar...., sp...-b......]; 
 	```
