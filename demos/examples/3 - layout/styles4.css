@@ -23,6 +23,7 @@ footer {
 	flex-basis: 2em;
 	/* min-height:2em; */
 	flex-shrink: 0;
+	margin-top: auto;
 
 	background-color: darkslateblue;
 	font-size: 20pt;
@@ -31,8 +32,11 @@ footer {
 
 .container{
 	display: flex;
-	/* align-items: flex-start; */
-	/* flex-basis worked for all except IE11. min-height works for IE11, Edge, Firefox  */
+	align-items: stretch;
+
+	/* GOTCHA! */
+	/* flex-basis worked for all except IE11. 
+	   min-height works for IE11, Edge, Firefox  */
 	/* flex-basis: calc(100vh - ((3em * 1.5) + (2em * 2) + 10px + 10px)); */
 	min-height: calc(100vh - ((3em * 1.5) + (2em * 2) + 10px + 10px));
 
@@ -46,6 +50,7 @@ aside {
 }
 
 main {
+	flex-grow:1;
 	background-color: sandybrown;
 	padding: 5px;
 }
