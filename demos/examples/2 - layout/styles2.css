@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 99vw;
+}
+
+header {
+    background-color: chocolate;
+    font-size: 15pt;
+    height: 3em;
+}
+
+footer {
+    background-color: darkslateblue;
+    position: absolute;
+    bottom: 0;
+    font-size: 20pt;
+    height: 2em;
+    width: 99vw;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    background-color: violet;
+    height: calc(100vh - (2em * 2) - (3em * 1.5));
+}
+
+aside {
+    background-color: mediumseagreen;
+}
+
+main {
+    background-color: olivedrab;
+    flex-grow: 1;
+}
+
+@media (min-width: 768px){
+	main {
+		order: 1;
+	}
+}
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        order: 0;
+    }
+}

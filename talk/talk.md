@@ -116,8 +116,18 @@ But this time the flex-shrink creates a ratio at which the flex items must shrin
 	* defers to the rules above
 * flex-basis property constrained by min-width and max-width
 
+# Does CSS Grid replace Flexbox?
+* No.
+* CSS Grid is a 2 dimensional layout tool
+* Currently has less support than Flexbox
+* Each can do things the other cannot
+* Each has its similarities
+* Eg
+	* (Jen Simmons on YouTube Flexbox vs CSS Grid)[https://www.youtube.com/watch?v=hs3piaN4b5I]
+
 # Getting started in production
-* browser support (caniuse.com)
+* browser support 
+	* (caniuse.com)[http://caniuse.com/#feat=flexbox]
 * start small
 	* center a single element on both axes
 	* add an optional element beside another 
@@ -126,3 +136,10 @@ But this time the flex-shrink creates a ratio at which the flex items must shrin
 		* perhaps the menu needs to display horizontally for wide displays and vertically on mobile
 
 # Resources
+* (This talk on GitHub: github.com/mikehans/FE-meetup-flexbox)[https://github.com/mikehans/FE-meetup-flexbox]
+* (Flexbox Zombies)[https://mastery.games/p/flexbox-zombies]
+* (MDN Flexible Box Layout)[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout]
+* (3 Superpowers of the Flex-Box Model — How flex-basis, flex-shrink and flex-grow work)[https://www.codecamps.com/3-superpowers-of-the-flex-box-model/?utm_source=frontendfocus&utm_medium=email]
+* (CSS-Tricks Complete Guide to Flexbox)[https://css-tricks.com/snippets/css/a-guide-to-flexbox/]
+* (Jen Simmons Layout Land YouTube channel)[https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag]
+* (Flexbugs repo on GitHub)[https://github.com/philipwalton/flexbugs]
