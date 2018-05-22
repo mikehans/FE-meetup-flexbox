@@ -135,6 +135,25 @@ But this time the flex-shrink creates a ratio at which the flex items must shrin
 	* you could use it to layout a menu
 		* perhaps the menu needs to display horizontally for wide displays and vertically on mobile
 
+# Bootstrap 4
+* What's good in BS4?
+	* It will support IE10 and iOS7
+		* may be a compelling enough reason to use it
+	* non-objectionable default look for the graphically challenged
+	* usable set of components
+	* CSS Properties!
+	* package.json is all npm scripts
+		* no grunt, bower, gulp,...
+* What's not so good in BS4?
+	* For IE11 or later
+		* nothing compelling in its layout system to warrant its use
+	* !important soup
+	* a lot of classes that apply a single attribute
+		* d-flex
+			* applies display:flex;
+		* justify-content-start
+			* applies justify-content: flex-start;
+
 # Resources
 * (This talk on GitHub: github.com/mikehans/FE-meetup-flexbox)[https://github.com/mikehans/FE-meetup-flexbox]
 * (Flexbox Zombies)[https://mastery.games/p/flexbox-zombies]
