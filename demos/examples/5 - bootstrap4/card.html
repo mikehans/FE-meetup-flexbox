@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Card in Vanilla CSS</title>
+    <style>
+    html{
+        font-size: 10pt;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 360px;
+        align-items: stretch;
+        border:1px solid lightgrey;
+        border-radius: 1px;
+    }
+
+    .img-placeholder{
+        background-color: lightgrey;
+        flex-basis: 50%;
+    }
+    .card-body{
+        flex-basis: 50%;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .btn{
+        padding:8px;
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        border-color: #007bff;
+        border-radius: 2px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="http://via.placeholder.com/287x180" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</body>
+
+</html>
