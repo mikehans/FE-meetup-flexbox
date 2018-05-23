@@ -125,16 +125,6 @@ But this time the flex-shrink creates a ratio at which the flex items must shrin
 * Eg
 	* (Jen Simmons on YouTube Flexbox vs CSS Grid)[https://www.youtube.com/watch?v=hs3piaN4b5I]
 
-# Getting started in production
-* browser support 
-	* (caniuse.com)[http://caniuse.com/#feat=flexbox]
-* start small
-	* center a single element on both axes
-	* add an optional element beside another 
-		* no matter whether 1 or both elements are displayed, you need to center them
-	* you could use it to layout a menu
-		* perhaps the menu needs to display horizontally for wide displays and vertically on mobile
-
 # Bootstrap 4
 * What's good in BS4?
 	* It will support IE10 and iOS7
@@ -153,6 +143,16 @@ But this time the flex-shrink creates a ratio at which the flex items must shrin
 			* applies display:flex;
 		* justify-content-start
 			* applies justify-content: flex-start;
+
+# Getting started in production
+* browser support 
+	* (caniuse.com)[http://caniuse.com/#feat=flexbox]
+* start small
+	* center a single element on both axes
+	* add an optional element beside another 
+		* no matter whether 1 or both elements are displayed, you need to center them
+	* you could use it to layout a menu
+		* perhaps the menu needs to display horizontally for wide displays and vertically on mobile
 
 # Resources
 * (This talk on GitHub: github.com/mikehans/FE-meetup-flexbox)[https://github.com/mikehans/FE-meetup-flexbox]
